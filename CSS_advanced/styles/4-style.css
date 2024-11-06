@@ -1,15 +1,37 @@
-/* Task 4: Define custom properties for font families */
+/* Task 3: Custom properties for colors */
 :root {
-    --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    
+    /* Task 4: Custom properties for font families */
+    --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* Apply font-family for body */
+/* Apply the custom properties */
 body {
+    color: var(--text-color);
     font-family: var(--font-family-base);
 }
 
-/* Apply font-family for all heading levels (h1 to h6) */
+/* Targeting all heading levels h1 to h6 */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
+}
+
+/* Keep existing styles */
+a {
+    color: var(--text-color);
+}
+
+.card-category {
+    color: var(--color-primary);
+}
+
+.section-tagline {
+    color: var(--color-primary);
 }
