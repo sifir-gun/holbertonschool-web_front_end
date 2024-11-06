@@ -1,18 +1,33 @@
-/* Tâche 24 : Ajouter un fond et un état de survol pour les services */
+[data-section-theme="dark"] {
+    --text-color: var(--color-white);
+    --section-title-color: var(--color-white);
+    background-color: var(--color-black);
+}
 
-/* Cibler card-title à l'intérieur de card-services */
+/* Footer address styling */
+.footer-address {
+    color: var(--text-color);
+}
+
+.social-link {
+    display: block;
+}
+
+.social-link > svg {
+    fill: var(--text-color);
+}
+
+/* Services styles */
 .card-services .card-title {
     margin: 0;
 }
 
-/* Cibler les liens (a) à l'intérieur de card-services */
 .card-services a {
     display: block;
-    padding: calc(2 * var(--root-element));
+    padding: 2rem;
     background-color: var(--color-light-grey);
 }
 
-/* État de survol pour les liens à l'intérieur de card-services */
 .card-services a:hover {
     color: var(--color-white);
     background-color: var(--color-primary);
