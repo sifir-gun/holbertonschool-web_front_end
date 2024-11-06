@@ -1,4 +1,3 @@
-/* Dark theme section styling */
 [data-section-theme="dark"] {
     --text-color: var(--color-white);
     --section-title-color: var(--color-white);
@@ -15,7 +14,7 @@
     display: block;
 }
 
-/* Social link SVG styling */
-.social-link svg {
+/* Target SVG children of social-link directly */
+.social-link > svg {
     fill: var(--text-color);
 }
