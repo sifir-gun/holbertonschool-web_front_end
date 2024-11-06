@@ -1,21 +1,34 @@
-/* Tâche 13 : Styles pour les liens et leurs pseudo-classes */
-
-/* Cible uniquement les liens contenant un hyperlien */
-a[href] {
-    color: inherit; /* Style général minimal pour les liens */
+:root {
+    /* Existing custom properties */
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
 }
 
-/* État visité : italique */
+/* Section title styles */
+.section-title {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
+}
+
+/* Target only anchor elements containing a hyperlink */
+a[href] {
+    /* Your existing link styles here */
+}
+
+/* Visited state */
 a[href]:visited {
     font-style: italic;
 }
 
-/* État survolé : souligné */
+/* Hover state */
 a[href]:hover {
     text-decoration: underline;
 }
 
-/* État actif : couleur d'arrière-plan */
+/* Active state */
 a[href]:active {
     background-color: var(--color-light-grey);
 }
