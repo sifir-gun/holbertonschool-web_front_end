@@ -1,7 +1,12 @@
-/* Tâche 21 : Simplifier le sélecteur col- */
+/* Row clearing */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
-/* Cible toutes les classes commençant par "col-" */
+/* Target all classes that start with col- */
 [class^="col-"] {
     float: left;
-    padding: calc(0.5 * var(--root-font-size));
+    padding: 0.5rem;
 }
