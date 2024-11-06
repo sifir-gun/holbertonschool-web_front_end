@@ -1,22 +1,48 @@
-/* Tâche 18 : Personnalisation de la barre de navigation */
-
-/* Définir les propriétés personnalisées pour le style de la navigation */
 :root {
+    --section-padding: 5rem 0;
+    --section-header-padding: 0 0 3rem;
+    --section-body-padding: 0 0 3rem;
+    --section-footer-padding: 3rem 0 0;
+    --section-footer-align: center;
+    --footer-padding: 5rem 0 1rem;
+    
+    /* New navbar custom properties */
     --nav-item-font-family: var(--font-family-title);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
-    --nav-item-letter-spacing: 0.04rem; /* 4% de la taille de la racine */
+    --nav-item-letter-spacing: 0.04rem;
     --nav-item-display: inline-block;
-    --nav-item-margin: 3rem 0 0 0;
+    --nav-item-margin: 0 0 3rem 0;
     --nav-item-link-hover: var(--color-primary);
 }
 
-/* Faire flotter le menu de navigation vers la droite */
+/* Existing section styles */
+.section {
+    padding: var(--section-padding);
+}
+
+.section-header {
+    padding: var(--section-header-padding);
+}
+
+.section-body {
+    padding: var(--section-body-padding);
+}
+
+.section-footer {
+    padding: var(--section-footer-padding);
+    text-align: var(--section-footer-align);
+}
+
+.footer {
+    padding: var(--footer-padding);
+}
+
+/* New navbar styles */
 .navbar-menu {
     float: right;
 }
 
-/* Styles pour la classe nav */
 .nav {
     margin: 0;
     padding: 0;
@@ -24,7 +50,6 @@
     text-align: center;
 }
 
-/* Styles pour les éléments nav-item dans nav */
 .nav .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
@@ -34,13 +59,11 @@
     margin: var(--nav-item-margin);
 }
 
-/* Styles pour les liens nav-link dans nav */
 .nav .nav-link {
     display: block;
-    padding: 0.5rem var(--root-font-size); /* 0.5rem haut/bas, 1rem gauche/droite */
+    padding: 0.5rem 1rem;
 }
 
-/* Style de survol pour les liens nav-link */
 .nav .nav-link:hover {
     color: var(--nav-item-link-hover);
 }
