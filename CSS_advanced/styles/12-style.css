@@ -1,0 +1,16 @@
+/* Tâche 12 : Ajouter des styles supplémentaires au titre de section */
+
+/* Définir les propriétés personnalisées */
+:root {
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+}
+
+/* Appliquer les styles à la classe section-title */
+.section-title {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
+}

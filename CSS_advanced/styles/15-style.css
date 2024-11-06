@@ -1,0 +1,7 @@
+/* Tâche 15 : Ajouter une règle de dimensionnement universelle */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}

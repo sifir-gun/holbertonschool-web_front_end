@@ -1,0 +1,21 @@
+/* Tâche 13 : Styles pour les liens et leurs pseudo-classes */
+
+/* Cible uniquement les liens contenant un hyperlien */
+a[href] {
+    /* Style général pour les liens, si nécessaire */
+}
+
+/* État visité : italique */
+a[href]:visited {
+    font-style: italic;
+}
+
+/* État survolé : souligné */
+a[href]:hover {
+    text-decoration: underline;
+}
+
+/* État actif : couleur d'arrière-plan */
+a[href]:active {
+    background-color: var(--color-light-grey);
+}

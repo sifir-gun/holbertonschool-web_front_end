@@ -1,0 +1,13 @@
+/* Tâche 11 : Ajouter des styles supplémentaires à section-tagline */
+
+/* Définir une propriété personnalisée pour la transformation en majuscules */
+:root {
+    --section-tagline-transform: uppercase;
+}
+
+/* Appliquer les styles à la classe section-tagline */
+.section-tagline {
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
+}

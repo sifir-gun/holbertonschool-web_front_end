@@ -1,0 +1,15 @@
+/* Task 4: Define custom properties for font families */
+:root {
+    --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Apply font-family for body */
+body {
+    font-family: var(--font-family-base);
+}
+
+/* Apply font-family for all heading levels (h1 to h6) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+}
