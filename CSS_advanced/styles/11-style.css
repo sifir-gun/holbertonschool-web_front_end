@@ -3,6 +3,8 @@
 /* Définir une propriété personnalisée pour la transformation en majuscules */
 :root {
     --section-tagline-transform: uppercase;
+    --font-family-title: 'Raleway', Helvetica, Arial, sans-serif;
+    --font-weight-bold: 700;
 }
 
 /* Appliquer les styles à la classe section-tagline */
