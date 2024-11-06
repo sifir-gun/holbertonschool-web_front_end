@@ -1,0 +1,16 @@
+/* Tâche 23 : Corriger les problèmes du thème sombre */
+
+/* Style de la classe footer-address */
+.footer-address {
+    color: var(--text-color);
+}
+
+/* Style de la classe social-link */
+.social-link {
+    display: block;
+}
+
+/* Style pour les enfants svg dans social-link */
+.social-link svg {
+    fill: var(--text-color);
+}

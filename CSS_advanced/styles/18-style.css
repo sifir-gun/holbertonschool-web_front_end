@@ -1,0 +1,46 @@
+/* Tâche 18 : Personnalisation de la barre de navigation */
+
+/* Définir les propriétés personnalisées pour le style de la navigation */
+:root {
+    --nav-item-font-family: var(--font-family-title);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--font-size-medium);
+    --nav-item-letter-spacing: 0.04rem; /* 4% de la taille de la racine */
+    --nav-item-display: inline-block;
+    --nav-item-margin: 3rem 0 0 0;
+    --nav-item-link-hover: var(--color-primary);
+}
+
+/* Faire flotter le menu de navigation vers la droite */
+.navbar-menu {
+    float: right;
+}
+
+/* Styles pour la classe nav */
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+/* Styles pour les éléments nav-item dans nav */
+.nav .nav-item {
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
+}
+
+/* Styles pour les liens nav-link dans nav */
+.nav .nav-link {
+    display: block;
+    padding: 0.5rem var(--root-font-size); /* 0.5rem haut/bas, 1rem gauche/droite */
+}
+
+/* Style de survol pour les liens nav-link */
+.nav .nav-link:hover {
+    color: var(--nav-item-link-hover);
+}

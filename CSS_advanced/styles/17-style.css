@@ -1,0 +1,37 @@
+/* Tâche 17 : Ajouter des espacements aux sections */
+
+/* Définir les propriétés personnalisées pour les espacements */
+:root {
+    --section-padding: 5rem 0;
+    --section-header-padding: 0 0 3rem;
+    --section-body-padding: 0 0 3rem;
+    --section-footer-padding: 3rem 0 0;
+    --section-footer-align: center;
+    --footer-padding: 5rem 0 1rem;
+}
+
+/* Appliquer l'espacement à la classe section */
+.section {
+    padding: var(--section-padding);
+}
+
+/* Appliquer l'espacement à la classe section-header */
+.section-header {
+    padding: var(--section-header-padding);
+}
+
+/* Appliquer l'espacement à la classe section-body */
+.section-body {
+    padding: var(--section-body-padding);
+}
+
+/* Appliquer l'espacement et l'alignement à la classe section-footer */
+.section-footer {
+    padding: var(--section-footer-padding);
+    text-align: var(--section-footer-align);
+}
+
+/* Appliquer l'espacement à la classe footer */
+.footer {
+    padding: var(--footer-padding);
+}

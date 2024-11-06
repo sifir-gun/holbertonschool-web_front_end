@@ -1,0 +1,29 @@
+/* Tâche 28 : Correction du header et de la barre de navigation */
+
+/* Définir les propriétés personnalisées pour le header */
+:root {
+    --header-padding: 4rem 0 0;
+    --header-logo-position: relative;
+    --header-logo-link-display: inline-block;
+    --header-logo-link-position: absolute;
+    --header-logo-link-top: -1rem;
+    --header-logo-link-left: 0;
+}
+
+/* Appliquer le padding au header */
+.header {
+    padding: var(--header-padding);
+}
+
+/* Styliser le logo dans le header */
+.header-logo {
+    position: var(--header-logo-position);
+}
+
+/* Cibler le lien à l'intérieur de header-logo */
+.header-logo a {
+    display: var(--header-logo-link-display);
+    position: var(--header-logo-link-position);
+    top: var(--header-logo-link-top);
+    left: var(--header-logo-link-left);
+}

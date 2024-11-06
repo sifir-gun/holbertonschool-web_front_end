@@ -1,0 +1,47 @@
+/* Tâche 32 : Intégrer des transitions */
+
+/* Définir les propriétés de transition personnalisées */
+:root {
+    --transition-duration: .3s;
+    --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+/* Transformations sur card-work */
+
+/* Cible card-image lors du survol de card-work */
+.card-work:hover .card-image {
+    transform: scale(1.2); /* Agrandir l'image */
+    transition: var(--transition-duration) var(--transition-cubic-bezier); /* Transition */
+}
+
+/* Cible card-outer lors du survol de card-work */
+.card-work:hover .card-outer {
+    transform: scale(0.95); /* Rétrécir l'élément */
+    transition: var(--transition-duration) var(--transition-cubic-bezier); /* Transition */
+}
+
+/* Animation des éléments de navigation */
+
+/* Avant de .nav .nav-link */
+.nav .nav-link::before {
+    content: "";
+    transition: var(--transition-duration) var(--transition-cubic-bezier); /* Transition en abrégé */
+}
+
+/* Animation de l'arrière-plan du bouton en état de survol */
+.button:hover {
+    transition-duration: var(--transition-duration);
+    transition-property: color, background-color;
+}
+
+/* Transitions sur card-work */
+
+/* Lors du survol de card-work, appliquer la transition à card-image */
+.card-work:hover .card-image {
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Appliquer la transition à .card-inner dans card-work */
+.card-work .card-inner {
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}

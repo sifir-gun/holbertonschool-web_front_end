@@ -1,0 +1,7 @@
+/* Tâche 22 : Ajouter un thème sombre aux sections */
+
+[data-section-theme="dark"] {
+    --text-color: var(--color-white);
+    --section-title-color: var(--color-white);
+    background-color: var(--color-black);
+}

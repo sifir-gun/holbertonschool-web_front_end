@@ -1,0 +1,20 @@
+/* Tâche 26 : Ajouter un rayon de bordure aux images */
+
+/* Centrer le texte dans card-testimonial */
+.card-testimonial {
+    text-align: center;
+}
+
+/* Cibler card-avatar à l'intérieur de card-testimonial */
+.card-testimonial .card-avatar {
+    border-radius: 50%;
+    width: 10rem; /* 10 fois la valeur de l'élément racine */
+    height: 10rem;
+}
+
+/* Cibler l'élément <cite> dans card-quote à l'intérieur de card-testimonial */
+.card-testimonial .card-quote cite {
+    display: block;
+    padding-top: 1rem; /* 1 fois la valeur de l'élément racine */
+    color: var(--color-primary);
+}

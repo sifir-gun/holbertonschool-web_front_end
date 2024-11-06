@@ -14,7 +14,7 @@
 }
 
 /* Target only anchor elements containing a hyperlink */
-a[href] {
+a[href]: {
     /* Your existing link styles here */
 }
 

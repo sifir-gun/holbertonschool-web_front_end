@@ -1,0 +1,23 @@
+/* Tâche 29 : Styliser et ajouter des propriétés personnalisées pour la navigation */
+
+/* Mettre à jour la propriété nav-item-link-hover */
+:root {
+    --nav-item-link-hover: var(--color-white);
+}
+
+/* Cibler le pseudo-élément ::before de nav-link dans nav */
+.nav .nav-link::before {
+    content: ""; /* Valeur vide */
+    position: absolute; /* Position absolue */
+    top: 0; /* Position verticale à 0 */
+    left: 0; /* Position horizontale à 0 */
+    background-color: var(--color-white); /* Couleur de fond */
+    width: 0; /* Largeur à 0 */
+    height: 20%; /* Hauteur à 20% de l'élément racine */
+}
+
+/* Cibler le pseudo-élément ::before de nav-link lorsque nav-item est en survol dans nav */
+.nav .nav-item:hover .nav-link::before {
+    background-color: var(--color-primary); /* Couleur de fond */
+    width: 100%; /* Largeur à 100% */
+}

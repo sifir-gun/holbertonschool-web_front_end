@@ -1,0 +1,17 @@
+/* Tâche 31 : Ajouter des guillemets décoratifs aux témoignages */
+
+/* Cibler card-quote dans card-testimonial */
+.card-testimonial .card-quote {
+    position: relative; /* Position relative à son parent */
+}
+
+/* Pseudo-élément avant de card-quote dans card-testimonial */
+.card-testimonial .card-quote::before {
+    content: "\201C"; /* Valeur de contenu pour les guillemets */
+    position: absolute; /* Position absolue */
+    top: -4.5rem; /* Position verticale */
+    left: -1rem; /* Position horizontale */
+    color: #efeded; /* Couleur de premier plan */
+    font-size: 10rem; /* Taille de la police */
+    z-index: -1; /* Z-index à -1 */
+}

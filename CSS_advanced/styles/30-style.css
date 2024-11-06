@@ -1,0 +1,60 @@
+/* Tâche 30 : Corriger la section "works" */
+
+/* Cibler card-outer dans card-work */
+.card-work .card-outer {
+    position: relative; /* Position relative */
+    overflow: hidden; /* Cacher le débordement */
+}
+
+/* Cibler l'image dans card-image dans card-work */
+.card-work .card-image img {
+    height: 30rem; /* Hauteur de 30rem */
+    width: 100%; /* Largeur à 100% */
+    object-fit: cover; /* Ajustement de l'image */
+    vertical-align: bottom; /* Alignement vertical en bas */
+}
+
+/* Cibler card-inner dans card-work */
+.card-work .card-inner {
+    position: absolute; /* Position absolue */
+    top: -0.1rem; /* Position verticale */
+    left: -0.1rem; /* Position horizontale à gauche */
+    right: -0.1rem; /* Position horizontale à droite */
+    z-index: 1; /* Z-index à 1 */
+}
+
+/* Cibler card-inner au survol de card-work */
+.card-work:hover .card-inner {
+    background-color: rgba(0, 0, 0, 0.7); /* Couleur de fond en survol */
+}
+
+/* Cibler card-title dans card-work */
+.card-work .card-title {
+    text-align: center; /* Centre le texte */
+    margin: 0; /* Marge à 0 */
+    opacity: 0; /* Opacité minimale */
+    height: 100%; /* Hauteur à 100% */
+    position: relative; /* Position relative */
+}
+
+/* Cibler le lien dans card-title et card-work */
+.card-work .card-title a {
+    display: block; /* Afficher en bloc */
+    text-decoration: none; /* Pas de décoration de texte */
+    padding-top: 45%; /* Padding en haut */
+}
+
+/* Créer les pseudo-éléments après pour le lien dans card-title et card-work */
+.card-work .card-title a::after {
+    content: ""; /* Valeur de contenu vide */
+    position: absolute; /* Position absolue */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* Cibler card-title au survol de card-work */
+.card-work:hover .card-title {
+    opacity: 1; /* Opacité maximale au survol */
+}

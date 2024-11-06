@@ -1,0 +1,8 @@
+/* Tâche 20 : Effacer le contexte de la grille */
+
+/* Crée une nouvelle ligne après chaque élément avec la classe row */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}

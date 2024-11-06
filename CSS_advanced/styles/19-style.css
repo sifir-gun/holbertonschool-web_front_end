@@ -1,0 +1,44 @@
+/* Tâche 19 : Styles de la grille et variables personnalisées */
+
+/* Propriété personnalisée pour la marge de section-tagline */
+:root {
+    --section-tagline-margin: 0;
+}
+
+/* Appliquer la marge pour la classe section-tagline */
+.section-tagline {
+    margin: var(--section-tagline-margin);
+}
+
+/* Styles pour les listes non ordonnées avec la classe row */
+ul.row {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Styles pour la classe col-1-3 */
+.col-1-3 {
+    width: 33.33%;
+    float: left;
+    padding: 0.5rem;
+}
+
+/* Styles pour la classe col-1-2 */
+.col-1-2 {
+    width: 50%;
+    float: left;
+    padding: 0.5rem;
+}
+
+/* Styles pour la classe footer-copyright */
+.footer-copyright {
+    margin: 0;
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+}
+
+/* Alignement à droite pour toutes les ul dans la classe footer */
+.footer ul {
+    text-align: right;
+}

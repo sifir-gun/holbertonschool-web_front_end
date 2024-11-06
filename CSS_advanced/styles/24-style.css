@@ -1,0 +1,20 @@
+/* Tâche 24 : Ajouter un fond et un état de survol pour les services */
+
+/* Cibler card-title à l'intérieur de card-services */
+.card-services .card-title {
+    margin: 0;
+}
+
+/* Cibler les liens (a) à l'intérieur de card-services */
+.card-services a {
+    display: block;
+    padding: calc(2 * var(--root-element));
+    background-color: var(--color-light-grey);
+}
+
+/* État de survol pour les liens à l'intérieur de card-services */
+.card-services a:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    text-decoration: none;
+}

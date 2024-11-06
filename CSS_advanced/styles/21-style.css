@@ -1,0 +1,7 @@
+/* Tâche 21 : Simplifier le sélecteur col- */
+
+/* Cible toutes les classes commençant par "col-" */
+[class^="col-"] {
+    float: left;
+    padding: calc(0.5 * var(--root-font-size));
+}

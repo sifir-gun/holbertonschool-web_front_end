@@ -1,0 +1,16 @@
+/* Tâche 27 : Styliser la section hero */
+
+/* Définir les dimensions d'arrière-plan pour section-hero */
+.section-hero {
+    background-size: 90rem auto; /* Largeur fixe de 90rem, hauteur automatique */
+}
+
+/* Cibler section-title à l'intérieur de section-hero */
+.section-hero .section-title {
+    margin-bottom: 5rem; /* Marge inférieure de 5rem */
+}
+
+/* Cibler section-inner à l'intérieur de section-hero */
+.section-hero .section-inner {
+    padding: 10rem 40rem 2rem 0; /* padding de haut, droite, bas, gauche */
+}
