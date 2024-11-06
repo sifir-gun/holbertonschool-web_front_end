@@ -1,23 +1,41 @@
-/* Tâche 29 : Styliser et ajouter des propriétés personnalisées pour la navigation */
-
-/* Mettre à jour la propriété nav-item-link-hover */
 :root {
+    --header-padding: 4rem 0 0;
+    --header-logo-position: relative;
+    --header-logo-link-display: inline-block;
+    --header-logo-link-position: absolute;
+    --header-logo-link-top: -1rem;
+    --header-logo-link-left: 0;
     --nav-item-link-hover: var(--color-white);
 }
 
-/* Cibler le pseudo-élément ::before de nav-link dans nav */
-.nav .nav-link::before {
-    content: ""; /* Valeur vide */
-    position: absolute; /* Position absolue */
-    top: 0; /* Position verticale à 0 */
-    left: 0; /* Position horizontale à 0 */
-    background-color: var(--color-white); /* Couleur de fond */
-    width: 0; /* Largeur à 0 */
-    height: 20%; /* Hauteur à 20% de l'élément racine */
+/* Header styles */
+.header {
+    padding: var(--header-padding);
 }
 
-/* Cibler le pseudo-élément ::before de nav-link lorsque nav-item est en survol dans nav */
+.header-logo {
+    position: var(--header-logo-position);
+}
+
+.header-logo a {
+    display: var(--header-logo-link-display);
+    position: var(--header-logo-link-position);
+    top: var(--header-logo-link-top);
+    left: var(--header-logo-link-left);
+}
+
+/* Nav styles */
+.nav .nav-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    width: 0;
+    height: 0.2rem;
+}
+
 .nav .nav-item:hover .nav-link::before {
-    background-color: var(--color-primary); /* Couleur de fond */
-    width: 100%; /* Largeur à 100% */
+    background-color: var(--color-primary);
+    width: 100%;
 }
