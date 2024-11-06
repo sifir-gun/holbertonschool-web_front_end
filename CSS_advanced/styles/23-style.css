@@ -1,16 +1,21 @@
-/* Tâche 23 : Corriger les problèmes du thème sombre */
+/* Dark theme section styling */
+[data-section-theme="dark"] {
+    --text-color: var(--color-white);
+    --section-title-color: var(--color-white);
+    background-color: var(--color-black);
+}
 
-/* Style de la classe footer-address */
+/* Footer address styling */
 .footer-address {
     color: var(--text-color);
 }
 
-/* Style de la classe social-link */
+/* Social link styling */
 .social-link {
     display: block;
 }
 
-/* Style pour les enfants svg dans social-link */
+/* Social link SVG styling */
 .social-link svg {
     fill: var(--text-color);
 }
