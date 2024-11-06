@@ -2,7 +2,7 @@
 
 /* Cible uniquement les liens contenant un hyperlien */
 a[href] {
-    /* Style général pour les liens, si nécessaire */
+    color: inherit; /* Style général minimal pour les liens */
 }
 
 /* État visité : italique */
