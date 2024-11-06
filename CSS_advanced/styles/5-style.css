@@ -1,5 +1,17 @@
-/* Task 5: Define custom properties for font sizes */
+/* Task 3: Custom properties for colors */
 :root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    
+    /* Task 4: Custom properties for font families */
+    --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    /* Task 5: Custom properties for font sizes */
     --font-size-small: 1.2rem;
     --font-size-medium: 1.6rem;
     --font-size-large: 1.8rem;
@@ -7,12 +19,32 @@
     --font-size-xx-large: 4.8rem;
 }
 
-/* Set the base font size for the html element */
+/* Set base font size for HTML */
 html {
     font-size: 62.5%;
 }
 
-/* Apply font size for body */
+/* Body styles */
 body {
+    color: var(--text-color);
+    font-family: var(--font-family-base);
     font-size: var(--font-size-medium);
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+}
+
+/* Keep existing styles */
+a {
+    color: var(--text-color);
+}
+
+.card-category {
+    color: var(--color-primary);
+}
+
+.section-tagline {
+    color: var(--color-primary);
 }
